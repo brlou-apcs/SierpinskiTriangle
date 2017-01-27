@@ -7,7 +7,9 @@ public void draw() {
 }
 
 public void recurse(int x, int y, int len) {
-  if(len <= 2) {
+  if(len <= 20) {
+    fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+    //stroke(255);
     triangle(x,y,x+len/2,y-len,x+len,y);
   } else {
     recurse(x,y,len/2);
